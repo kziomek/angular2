@@ -13,6 +13,9 @@ import {HttpModule} from "@angular/http";
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 
+import './rxjs-extensions';
+import {HeroSearchComponent} from "./hero-search.component";
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -22,7 +25,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
     AppRoutingModule
 
   ],
-  declarations: [ AppComponent, DashboardComponent, HeroesComponent, HeroDetailComponent ],
+  declarations: [ AppComponent, DashboardComponent, HeroesComponent, HeroDetailComponent, HeroSearchComponent ],
   bootstrap:    [ AppComponent ],
   providers:    [ HeroService ]
 })
